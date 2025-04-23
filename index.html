@@ -1,0 +1,127 @@
+                    <!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>My Awesome Site</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to My Site</h1>
+            <p>Your one-stop for cool stuff</p>
+            <button id="learnMoreBtn">Learn More</button>
+        </div>
+    </header>
+
+
+    <section class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a passionate developer who loves to create beautiful and functional websites.</p>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>© 2025 created by akarsh</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    background-color: #6200ea;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+
+header p {
+    font-size: 1.3em;
+    margin-bottom: 1.5em;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: white;
+    color: #6200ea;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+button:hover {
+    background-color: #ddd;
+}
+
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+.about {
+    padding: 60px 0;
+    background-color: white;
+    text-align: center;
+}
+
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+
+
+
+// script.js
+
+
+document.getElementById("learnMoreBtn").addEventListener("click", () => {
+    document.querySelector(".about").scrollIntoView({ behavior: "smooth" });
+});
